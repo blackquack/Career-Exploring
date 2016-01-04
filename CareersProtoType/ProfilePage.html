@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Profile Page</title>
+		<meta name="description" content="">
+		<meta name="author" content="Charga">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<style>
+			#Save:hover{
+				background-color:silver;
+				color:white;
+				cursor:pointer;
+			}
+		</style>
+		<link rel="stylesheet" href="Styles/styles.css" />
+		<link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' href='Scripts/jquery-ui.css' type='text/css'/>
+		<link rel='stylesheet' href='Styles/Bar/style.css' type='text/css'/>
+		<script src="Scripts/jquery-1.11.2.min.js"></script>
+		<script src="Scripts/jquery-ui.js"></script>
+	</head>
+
+	<body>
+		<div id="MainContainer">
+			<div id="Header">
+				<div style="float:left; margin-top:10px; margin-bottom:10px; margin-left:10px; ">
+					<form action="JobPage.html">
+					<input type="text" style="height:40px; width:400px; border-top-left-radius: 50px; border-bottom-left-radius: 50px; font-size:30px; padding:10px; float:left; border:0;" />
+					<img style="float:left; background-color:white;" src="Images/search.png" height="60" width="60" />
+					</form>
+				</div>
+				<div class="HeaderTopicContainer">
+					<a href="login.html"><div class="HeaderTopic" style="border-right:1px solid silver; border-top-left-radius: 50px; border-bottom-left-radius: 50px;">Login</div></a>
+					<a href="register.html"><div class="HeaderTopic" style="border-right:1px solid silver;">Register</div></a>
+					<a href="not.html"><div class="HeaderTopic" style="border-right:1px solid silver;">About</div></a>
+					<a href="not.html"><div class="HeaderTopic" style="border-right:1px solid silver;">Contact</div></a>
+					<a href="index.html"><div class="HeaderTopic" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;">Home</div></a>
+				</div>
+			</div>
+			<div id="Page" style="width:1000px; margin:auto;">
+				<div id="JobDetailsContainer">
+					<div id="TalkToAProfessionalContainer" style="float:left; width:490px;">
+						<div class="JobRequirementTitle" style="width:100%;">
+							<h3>Profile Picture</h3>
+							<div id="arrowP">
+								<div id="Professional" style="padding:5px; width:400px; margin-bottom:10px; border:1px solid silver; border-radius:400px; height:400px;background-image:url('Images/old-guy-from-up.jpg'); background-size:cover; background-position: center center">
+									<div id="ProContainer">
+										<div class="JobRequirementTitle" style="width:100%;">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="JobDetails" style="float:right; width:490px;">
+						<div class="JobRequirementTitle" style="width:100%; border-bottom:1px solid silver;">
+							<h3>Information About You</h3>
+							<div id="arrowD" style=" margin-top: 60px;">
+								<div style="padding:5px; width:478px; margin-bottom:10px; border:1px solid silver;">
+									<div>
+										<div class="JobRequirementTitle" style="width:100%;">
+											<fieldset>
+												<legend>User Information</legend>
+												<form>
+													<label>First Name</label>
+													<input type="text" />
+													<div class="clear"></div>
+													<label>Last Name</label>
+													<input type="text" />
+													<div class="clear"></div>
+													<label>Age</label>
+													<input type="text" />
+													<div class="clear"></div>
+													<label>Grade</label>
+													<input type="text" />
+													<div class="clear"></div>
+													<label>Interests</label><br />
+													<textarea style="resize:none; width:99%;"></textarea>
+													<div class="clear"></div>
+												</form>
+																							<div class="clear"></div>
+												<button>Save</button>
+											</fieldset>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div style="width:500px; height:200px; float:left;">
+						<div class="title" style="color:gray;">Career Progress</div>
+						<br />
+						<div id="CareerProgress" style="height:20px; width:100%">
+							
+						</div>
+						<br />
+						<div class="title" style="color:gray;">Interest Progress</div>
+						<br />
+						<div id="InterestProgress" style="height:20px; width:100%">
+							
+						</div>
+					</div>
+					<div style="width:500px; height:200px; float:right;">
+						<a href="careercafe.html"><div style="height:50px; width:200px; border:1px solid silver; border-radius:5px; text-align: center; line-height: 50px; font-size: 30px; cursor:pointer; float:right; margin-top:160px; color:white; background-color:rgb(185,201,216);">
+							Go Explore!
+						</div></a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<br />
+			 	<div id="CareerBar">
+			 		<div class="title" style="color:gray;">Career TimeLine</div>
+			 		<div class="checkout-wrap">
+					  <ul class="checkout-bar">
+					
+					    <li class="visited first">
+					      <a href="#">Find a Career Path</a>
+					    </li>
+					
+					    <li class="previous visited">Explore Career Path</li>
+					
+					    <li class="active">Interest Progress</li>
+					
+					    <li class="next">Career Progress</li>
+					
+					    <li class="">Start your journey!</li>
+					
+					  </ul>
+					</div>
+			 	</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$( "#CareerProgress" ).progressbar({
+		      value: 37
+		    });
+		$( "#InterestProgress" ).progressbar({
+		      value: 60
+		    });
+	</script>
+</html>

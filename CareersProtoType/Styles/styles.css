@@ -1,0 +1,268 @@
+html, body{
+	margin:0;
+	padding:0;
+	border:0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+a, form{
+	border:0;
+	padding:0;
+	margin:0;
+	color: inherit;
+}
+
+
+#Header{
+	width:100%;
+	min-width:1000px;
+	height:80px;
+	background-color:rgb(185,201,216);
+	border-bottom:1px solid silver;
+}
+
+.HeaderTopicContainer{
+	padding:10px;
+	float:right;
+	margin:5px 5px 5px 5px;
+	margin-right:1%;
+	border-radius:50px;
+	background-color:white;
+	border:1px solid silver;
+	min-width: 380px;
+}
+
+.HeaderTopic{
+	float:left;
+	line-height:48px;
+	color:black;
+	padding-left:15px;
+	padding-right:15px;
+	cursor:pointer;
+}
+
+.HeaderTopic:hover{
+	background-color:silver;
+}
+
+#SliderContainer{
+	width:100%;
+	min-width:1000px;
+	height:500px;
+	background-color:rgb(83, 181, 218);
+	border-bottom:1px solid silver;
+	background-image:url("../Images/sky.jpg");
+	background-size:cover;
+}
+
+.background{
+	background-image:url("../Images/sky.jpg");
+}
+
+.title{
+	width:100%;
+	margin-top:10px;
+	font-size:30px;
+	border-bottom:3px solid silver;
+}
+
+.SliderContainer_Picture{
+	float:left;
+}
+
+#GetStarted{
+	width:200px;
+	height:65px;
+	border:3px solid white;
+	border-radius:5px;
+	top:70%;
+	left:50%;
+	position:absolute;
+	cursor:pointer;
+	background: #499bea; /* Old browsers */
+	background: -moz-linear-gradient(top,  #499bea 0%, #207ce5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #499bea 0%,#207ce5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #499bea 0%,#207ce5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #499bea 0%,#207ce5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #499bea 0%,#207ce5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* IE6-9 */
+	
+	line-height:65px;
+	text-align:center;
+	color:white !important;
+	text-decoration:none !important;
+	font-size:2em;
+
+}
+
+.Container{
+	margin:auto;
+	width:1000px;
+	height:500px;
+	border-bottom:1px solid silver;
+	margin-bottom:5px;
+}
+
+label{
+	float:left;
+}
+
+input[type=text],input[type=password]{
+	float:right;
+}
+
+button{
+	background-color:white;
+	border-radius:5px;
+	padding:10px;
+	float:right;
+	border:2px solid silver !important;
+	cursor:pointer;
+}
+
+button:hover{
+	background-color:silver;
+}
+
+.clear{
+	clear:both;
+	height:10px;
+}
+
+#catTable thead td{
+	color:white;
+	font-size:50px;
+	text-align:center;
+	font-weight:bolder;
+	padding:10px;
+}
+
+
+#catTable tbody td{
+	color:white;
+	font-size:50px;
+	text-align:center;
+	font-weight:bolder;
+	padding:10px;
+	cursor:pointer;
+}
+
+#catTable tbody td:hover {
+	text-decoration:underline;
+}
+
+#SelectTable thead td{
+	color:white;
+	font-size:50px;
+	text-align:center;
+	font-weight:bolder;
+	padding:10px;
+}
+
+#SelectTable tbody td{
+	text-align:center;
+	font-weight:bolder;
+	padding:10px;
+	cursor:pointer;
+	width:25% !important;
+}
+
+#SelectTable tbody td:hover {
+	text-decoration:underline;
+}
+
+table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 100%;
+}	
+
+th {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+tr {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:nth-child(odd) td {
+	background: #f1f1f1 url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover td {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+}
